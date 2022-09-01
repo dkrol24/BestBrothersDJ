@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Image from "../../assets/n6.jpg";
 import Image2 from "../../assets/n.jpg";
 import { AiOutlineHeart } from "react-icons/ai";
-import { FaMusic } from "react-icons/fa";
+import { MdOutlineAddCircleOutline } from "react-icons/md";
 import { GiPartyPopper } from "react-icons/gi";
 import { SiDiscogs } from "react-icons/si";
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     width: "80%",
-    minHeight: "70vh",
+    minHeight: "100vh",
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "right",
     backgroundSize: "contain",
     backgroundAttachment: "fixed",
-    "@media (max-width: 770px)": {
-      flexDirection: "column",
+    "@media (max-width: 1024px)": {
+      flexDirection: "column-reverse",
     },
   },
   imagediv: {
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
 
-    "@media (max-width: 770px)": {
+    "@media (max-width: 1024px)": {
       width: "100%",
       padding: "0",
       margin: "0",
@@ -81,14 +81,14 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(107,52,26,255)",
   },
   p: {
-    fontSize: "14px",
+    fontSize: "16px",
     margin: "5px",
     letterSpacing: "2px",
-    lineHeight: "24px",
+    lineHeight: "26px",
     fontWeight: "500",
     color: "rgb(46, 46, 46)",
-    "@media (max-width: 1000px)": {
-      fontSize: "10px",
+    "@media (max-width: 1100px)": {
+      fontSize: "12px",
     },
   },
   navigations: {
@@ -127,20 +127,37 @@ const Wedding = () => {
       <div className={classes.header}>
         <div className={classes.headerText}>
           <h1 className={classes.h1}>
-            Chcielibyście na swoje wesele DJ-a ale boicie się, że zabraknie
             <span className={classes.span}>
               {" "}
-              tradycyjnych elementów tej uroczystości?
+              Każde wesele jest dla nas niesamowitym przeżyciem!
             </span>
           </h1>
           <p className={classes.p}>
-            Zadbamy o to, aby na parkiecie każdy znalazł coś dla siebie,
-            wspólnie pośpiewamy z gośćmi przy stołach a jak trzeba będzie to
-            przyjedziemy również do domu Panny Młodej aby zapewnić oprawę do
-            błogosławieństwa i wyprowadzenia Pary Młodej z domu
+            Do każdej uroczystości podchodzimy indywidualnie. Wspólnie z Parą
+            Młodą tworzymy scenariusze idealnie dopasowane do charakteru wesela.
+            Jesteśmy elastyczni i otwarci na wszystkie propozycje.
+          </p>
+          <p className={classes.p}>
+            Podczas wesela bardzo szczegółowo dobieramy repertuar muzyczny, na
+            bieżąco obserwując preferencje gości. Oddajemy do Państwa dyspozycji
+            szeroką bazę utworów, począwszy od lat 60 przez '70 '80 '90, po
+            współczesne hity z list przebojów, oczywiście wszystkie gatunki
+            muzyczne w tym muzykę biesiadną, disco polo, pop, rock, rock'n'roll,
+            itd.
+          </p>
+          <p className={classes.p}>
+            Naszym Parom dajemy również możliwość stworzenia własnej playlisty
+            weselnej. Jest to lista około 15 - 30 utworów, przy których Państwo
+            Młodzi uwielbiają się bawić, lub które mają sentymantalne znaczenie
+            dla nich oraz ich bliskich.
+          </p>
+          <p className={classes.p}>
+            W trakcie wesela odtwarzamy utwory na życzenie gości oraz
+            realizujemy wszystkie dedykacje.
           </p>
         </div>
       </div>
+
       <div className={classes.navigations}>
         <a href="#wedding">
           <div className={classes.itemiconactive}>
@@ -157,9 +174,11 @@ const Wedding = () => {
             <GiPartyPopper style={{ color: "black", fontSize: "10px" }} />
           </div>
         </a>
-        <a href="#instruments">
+        <a href="#additional">
           <div className={classes.itemicon}>
-            <FaMusic style={{ color: "black", fontSize: "10px" }} />
+            <MdOutlineAddCircleOutline
+              style={{ color: "black", fontSize: "10px" }}
+            />
           </div>
         </a>
       </div>

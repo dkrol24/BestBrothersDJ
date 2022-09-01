@@ -52,13 +52,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "19px",
   },
   h1: {
-    fontSize: "35px",
+    fontSize: "42px",
     letterSpacing: "2px",
     fontWeight: "400",
     color: "yellow",
   },
   p2: {
-    fontSize: "18px",
+    fontSize: "16px",
     letterSpacing: "2px",
     fontWeight: "400",
     color: "white",
@@ -77,28 +77,35 @@ const Eq = () => {
   return (
     <div id="eq" className={classes.container}>
       <div className={classes.OffertContainer}>
-        <h1 className={classes.h1}>Sprzęt DJ!</h1>
+        <h1 className={classes.h1}>Stanowisko</h1>
         <p className={classes.p2}>
-          Nasz sprzęt Dj’ski, który świetnie sprawdza się w każdych warunkach to{" "}
+          Nasze charakterystyczne rustykalne stanowisko idealnie wpasuje się w
+          wystrój każdej sali, pokreśli urok wesela oraz{" "}
+          <span className={classes.span}>zapewni elegancką prezentację.</span>
+        </p>
+        <p className={classes.p2}>
+          Pracujemy tylko i wyłącznie na profesjonalnych systemach
+          nagłośnieniowych amerykańskiej firmy{" "}
+          <span className={classes.span}> Mackie</span> oraz technice
+          oświetleniowej renomowanej marki{" "}
+          <span className={classes.span}> Showtec.</span>
+        </p>
+        <p className={classes.p2}>
+          Podczas obsługi uroczystości
           <span className={classes.span}>
-            profesjonalny stół mikserski firmy DOBREJ.
-          </span>
+            {" "}
+            stawiamy przede wszystkim na
+          </span>{" "}
+          wysoką kulturę osobistą, elegancję, dbałość o detale, estetykę
+          stanowiska oraz wyczucie stylu.
         </p>
         <p className={classes.p2}>
-          <span className={classes.span}>Oświetlenie </span>- dopasowane do
-          wielkości sali. Estetyczne i eleganckie głowice ruchome firmy
-          spełniają wymagania najbardziej wymagających klientów. Dodatkowe
-          oświetlenie sali <span className={classes.span}> światłem LED</span>{" "}
-          sprawia, że tworzy się niepowtarzalny klimat...
-        </p>
-        <p className={classes.p2}>
-          <span className={classes.span}>Nagłośnienie </span>- profesjonale
-          aktywne kolumny firmy JBL to czysty i głęboki dźwięk. Zarówno wewnątrz
-          jak również w plenerze.
-        </p>
-        <p className={classes.p2}>
-          Bardzo dbamy o minimalizację okablowania jeżeli chodzi o{" "}
-          <span className={classes.span}>estetykę.</span>
+          Jako Best Brothers - DJ & Wodzirej posiadamy legitymację organizacji
+          zrzeszającej polskich profesjonalnych DJ-ów. Muzyka odtwarzana przez
+          nas podczas imprez pochodzi z polskich oraz zagranicznych firm
+          fonograficznych i jest całkowicie legalna. Każdy utwór posiada odrębny
+          certyfikat, zezwalający na publiczne odtwarzanie, bez narażania się na
+          negatywne skutki kotroli róznych instytucji.
         </p>
       </div>
     </div>

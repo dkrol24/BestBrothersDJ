@@ -101,7 +101,7 @@ const Testimonial = () => {
               wprowadzają niezapomniany charakter. Bardzo za wszystko dziękujemy
               i raz jeszcze polecamy! ❤️
             </p>
-            <h2>Kamila Rogala</h2>
+            <h2>Kamila R.</h2>
           </SwiperSlide>
           <SwiperSlide>
             <p>
@@ -113,7 +113,7 @@ const Testimonial = () => {
               tańcząc na krzesłach 🤣❤ Przesympatyczni faceci którzy robią coś z
               pasją, lubią to co robią i wychodzi im to bardzo dobrze! 🥳🎺
             </p>
-            <h2>Basia Smogór - Turek</h2>
+            <h2>Basia S.</h2>
           </SwiperSlide>
           <SwiperSlide>
             <p>
@@ -122,7 +122,7 @@ const Testimonial = () => {
               jest to, że grają na instrumentach, więc granie pod domem czy przy
               stołach nie jest dla nich problemem. Pozdrawiamy i dziękujemy 🥰
             </p>
-            <h2>Gosia Słapińska</h2>
+            <h2>Gosia S.</h2>
           </SwiperSlide>
           <SwiperSlide>
             <p>
@@ -132,7 +132,7 @@ const Testimonial = () => {
               muzyczne skarby 😍 Podsumowując - jak wesele, to tylko z BEST
               BROTHERS!!! 🥰🥰😍😍
             </p>
-            <h2>Iwona Smutek</h2>
+            <h2>Iwona S.</h2>
           </SwiperSlide>
           <SwiperSlide>
             <p>
@@ -142,7 +142,7 @@ const Testimonial = () => {
               przesympatyczni, potrafiący wyciągnąc każdego na parkiet! Dla tej
               ekipy brakuje skali ocen!!! SERDECZNIE POLECAM
             </p>
-            <h2>Ania Żółkiewska</h2>
+            <h2>Ania Ż.</h2>
           </SwiperSlide>
           <SwiperSlide>
             <p>
@@ -154,7 +154,7 @@ const Testimonial = () => {
               dj'a na weselu po imprezie z nimi zmieniły zdanie. Bardzo
               serdecznie polecam! 😃
             </p>
-            <h2>Karol Wnęk</h2>
+            <h2>Karol W.</h2>
           </SwiperSlide>
           ...
         </Swiper>

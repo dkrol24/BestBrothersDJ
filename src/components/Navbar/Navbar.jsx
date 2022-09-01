@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import Logo from "../../assets/navbarlogo.png";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import "./Styles.scss";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

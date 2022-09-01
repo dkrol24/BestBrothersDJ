@@ -1,10 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Image from "../../assets/n5.jpg";
-import { AiOutlineHeart } from "react-icons/ai";
-import { FaMusic } from "react-icons/fa";
-import { GiPartyPopper } from "react-icons/gi";
-import { SiDiscogs } from "react-icons/si";
+import { MdOutlineAddCircleOutline } from "react-icons/md";
+import sections from "./additional/data";
+import SingleFeatures from "./additional/SingleFeatures";
+import Image2 from "../../assets/n.jpg";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
@@ -14,17 +14,31 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+    "@media (max-width: 770px)": {
+      backgroundImage: `linear-gradient(rgba(255, 255, 255,0.9),rgba(255, 255, 255,0.9)),url(${Image2})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "contain",
+
+      backgroundAttachment: "fixed",
+    },
+  },
+  itemlist: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100%",
+    textAlign: "center",
+    justifyContent: "center",
   },
   img: {
     width: "100%",
     height: "100%",
   },
   h1: {
-    fontSize: "24px",
+    fontSize: "42px",
     margin: "5px",
     letterSpacing: "2px",
     fontWeight: "400",
-    color: "rgb(46, 46, 46)",
+    color: "rgba(107,52,26,255)",
     "@media (max-width: 1000px)": {
       fontSize: "20px",
     },
@@ -55,33 +69,44 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "5px",
   },
 }));
-const Instruments = () => {
+const Additional = () => {
   const classes = useStyles();
   return (
-    <div id="instruments" className={classes.container}>
-      <h1 className={classes.h1}>Saksofon + Akordeon</h1>
-      <div>
-        <img className={classes.img} src={Image} alt="" />
+    <div id="additional" className={classes.container}>
+      <h1 className={classes.h1}>Usługi dodatkowe!</h1>
+
+      <div className={classes.itemlist}>
+        {sections.features.map((feature) => {
+          return <SingleFeatures key={feature.id} {...feature} />;
+        })}
       </div>
+      <img className={classes.img} src={Image} alt="" />
+
       <div className={classes.navigations}>
         <a href="#wedding">
           <div className={classes.itemicon}>
-            <AiOutlineHeart style={{ color: "black", fontSize: "10px" }} />
+            <MdOutlineAddCircleOutline
+              style={{ color: "black", fontSize: "10px" }}
+            />
           </div>
         </a>
         <a href="#eq">
           <div className={classes.itemicon}>
-            <SiDiscogs style={{ color: "black", fontSize: "10px" }} />
+            <MdOutlineAddCircleOutline
+              style={{ color: "black", fontSize: "10px" }}
+            />
           </div>
         </a>
         <a href="#party">
           <div className={classes.itemicon}>
-            <GiPartyPopper style={{ color: "black", fontSize: "10px" }} />
+            <MdOutlineAddCircleOutline
+              style={{ color: "black", fontSize: "10px" }}
+            />
           </div>
         </a>
-        <a href="#instruments">
+        <a href="#additional">
           <div className={classes.itemiconactive}>
-            <FaMusic
+            <MdOutlineAddCircleOutline
               style={{ color: "rgba(107,52,26,255)", fontSize: "10px" }}
             />
           </div>
@@ -91,4 +116,4 @@ const Instruments = () => {
   );
 };
 
-export default Instruments;
+export default Additional;

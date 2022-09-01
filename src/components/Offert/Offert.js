@@ -2,14 +2,14 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Image from "../../assets/logo.jpg";
 import { AiOutlineHeart } from "react-icons/ai";
-import { FaMusic } from "react-icons/fa";
+import { MdOutlineAddCircleOutline } from "react-icons/md";
 import { GiPartyPopper } from "react-icons/gi";
 import { SiDiscogs } from "react-icons/si";
 
 import Wedding from "./Wedding";
 import Eq from "./Eq";
 import Party from "./Party";
-import Instruments from "./Instruments";
+import Additional from "./Additional";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
@@ -46,15 +46,16 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-around",
     alignItems: "center",
     textAlign: "center",
-    height: "120px",
+    height: "180px",
     padding: "20px",
-    height: "120px",
-    width: "190px",
-    margin: "10px",
+
+    width: "250px",
+    margin: "5px",
     "&:hover": {
       transform: "scale(1.1)",
     },
   },
+
   itemicon: {
     display: "flex",
     justifyContent: "center",
@@ -65,13 +66,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "19px",
   },
   h1: {
-    fontSize: "35px",
+    fontSize: "42px",
     letterSpacing: "2px",
     fontWeight: "400",
     color: "white",
   },
   p2: {
-    fontSize: "18px",
+    fontSize: "16px",
     letterSpacing: "2px",
     fontWeight: "400",
     color: "white",
@@ -92,8 +93,9 @@ const Offert = () => {
       <div className={classes.OffertContainer}>
         <h1 className={classes.h1}>Oferta dla was</h1>
         <p className={classes.p2}>
-          Zapraszamy do zapoznania się z naszą ofertą. <br /> Chętnie odpowiemy
-          na wszystkie pytania, doradzimy i udzielimy fachowych wskazówek.
+          Zapraszamy do zapoznania się z naszą ofertą. <br /> W przypadku
+          jakichkolwiek dodatkowych pytań prosimy o kontakt. Na pewno nie
+          zostawimy zadnego pytania bez odpowiedzi!
         </p>
 
         <div className={classes.wrapper}>
@@ -110,7 +112,7 @@ const Offert = () => {
               <div className={classes.itemicon}>
                 <SiDiscogs style={{ color: "white", fontSize: "30px" }} />
               </div>
-              <p className={classes.p}>Sprzęt DJ</p>
+              <p className={classes.p}>Stanowisko</p>
             </div>
           </a>
           <a href="#party">
@@ -121,12 +123,14 @@ const Offert = () => {
               <p className={classes.p}>Inne imprezy</p>
             </div>
           </a>
-          <a href="#instruments">
+          <a href="#additional">
             <div className={classes.item}>
               <div className={classes.itemicon}>
-                <FaMusic style={{ color: "white", fontSize: "30px" }} />
+                <MdOutlineAddCircleOutline
+                  style={{ color: "white", fontSize: "30px" }}
+                />
               </div>
-              <p className={classes.p}>Instrumenty</p>
+              <p className={classes.p}>Usługi dodatkowe</p>
             </div>
           </a>
         </div>
@@ -134,7 +138,7 @@ const Offert = () => {
       <Wedding />
       <Eq />
       <Party />
-      <Instruments />
+      <Additional />
     </div>
   );
 };

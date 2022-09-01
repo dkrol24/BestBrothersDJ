@@ -1,6 +1,6 @@
 .app__footer {
     flex: 1;
-    width: 100%;
+    width: 99%;
     flex-direction: column;
 
     @media screen and (max-width: 768px) {
@@ -16,47 +16,9 @@
     flex-wrap: wrap;
     margin: 4em 2rem 2rem;
 
-    .app__footer-card {
-        min-width: 290px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        margin: 1rem 0;
-        padding: 1rem;
-        border-radius: 10px;
-        cursor: pointer;
-        background-color: #fef4f5;
-
-        transition: all 0.3s ease-in-out;
-
-        img {
-            width: 40px;
-            height: 40px;
-            margin: 0 0.7rem;
-        }
-
-        p {
-            font-weight: 500;
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        &:hover {
-            box-shadow: 0 0 25px #7e4f54;
-        }
-
-        @media screen and (max-width: 450px) {
-            width: 100%;
-        }
-    }
 
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 99%;
     }
 }
 
@@ -74,7 +36,7 @@
     margin: 1rem 2rem;
 
     div {
-        width: 100%;
+        width: 99%;
 
         margin: 0.75rem 0;
         border-radius: 10px;
@@ -85,7 +47,7 @@
 
         input,
         textarea {
-            width: 100%;
+            width: 99%;
             padding: 0.95rem;
             border: none;
             border-radius: 7px;
@@ -124,7 +86,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 99%;
         margin: 1rem 0;
     }
 }

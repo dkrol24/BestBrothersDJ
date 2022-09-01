@@ -17,8 +17,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundAttachment: "fixed",
 
-    overflow: "hidden",
-    position: "relative",
+    "@media (max-width: 900px)": {
+      backgroundAttachment: "scroll",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      minHeight: "60vh",
+    },
   },
 
   colorText: {
@@ -27,9 +31,15 @@ const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
   },
-  title: {
-    color: "#fff",
-    fontSize: "4.5rem",
+  h1: {
+    fontSize: "80px",
+    margin: "5px",
+    letterSpacing: "2px",
+    fontWeight: "400",
+    color: "white",
+    "@media (max-width: 1000px)": {
+      fontSize: "50px",
+    },
   },
   goDown: {
     color: "yellow",
@@ -51,7 +61,7 @@ export default function Header() {
         collapsedHeight={10}
       >
         <div className={classes.container}>
-          <h1 className={classes.title}>
+          <h1 className={classes.h1}>
             DJ & Wodzirej <br />
             Best <span className={classes.colorText}>Brothers.</span>
           </h1>

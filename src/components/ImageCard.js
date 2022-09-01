@@ -22,16 +22,33 @@ const useStyles = makeStyles({
     height: "410px",
     width: "100%",
   },
-  title: {
-    fontFamily: "Nunito",
-    fontWeight: "bold",
-    fontSize: "1.2rem",
-    color: "black",
+  h1: {
+    fontSize: "22px",
+    margin: "5px",
+    letterSpacing: "2px",
+    fontWeight: "400",
+    color: "rgba(107,52,26,255)",
+    "@media (max-width: 1000px)": {
+      fontSize: "20px",
+    },
   },
-  desc: {
-    fontFamily: "Nunito",
-    fontSize: "1rem",
-    color: "rgb(46, 46, 46)",
+  p: {
+    fontSize: "16px",
+    margin: "5px",
+    letterSpacing: "2px",
+    lineHeight: "26px",
+    fontWeight: "500",
+    color: "black",
+    "@media (max-width: 1100px)": {
+      fontSize: "12px",
+    },
+  },
+
+  span: {
+    fontSize: "42px",
+    letterSpacing: "2px",
+    fontWeight: "500",
+    color: "rgba(107,52,26,255)",
   },
 });
 
@@ -43,22 +60,8 @@ const ImageCard = ({ place, checked }) => {
       <Card className={classes.root}>
         <CardMedia className={classes.media} image={place.imageUrl} />
         <CardContent>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h1"
-            className={classes.title}
-          >
-            {place.title}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-            className={classes.desc}
-          >
-            {place.description}
-          </Typography>
+          <h1 className={classes.h1}>{place.title}</h1>
+          <p className={classes.p}>{place.description}</p>
         </CardContent>
       </Card>
     </Collapse>

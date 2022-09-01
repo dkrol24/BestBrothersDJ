@@ -10,11 +10,12 @@
   width: 320px;
   height: 400px;
   background-color: rgba(186, 121, 57, 0.78);
-
+  border-radius: 30px;
   padding:10px;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  border-radius: 30px;
 }

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Image from "../../assets/n8.jpg";
 import Image2 from "../../assets/n.jpg";
 import { AiOutlineHeart } from "react-icons/ai";
-import { FaMusic } from "react-icons/fa";
+import { MdOutlineAddCircleOutline } from "react-icons/md";
 import { GiPartyPopper } from "react-icons/gi";
 import { SiDiscogs } from "react-icons/si";
 const useStyles = makeStyles((theme) => ({
@@ -81,14 +81,14 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(107,52,26,255)",
   },
   p: {
-    fontSize: "14px",
+    fontSize: "16px",
     margin: "5px",
     letterSpacing: "2px",
     lineHeight: "24px",
     fontWeight: "500",
     color: "rgb(46, 46, 46)",
     "@media (max-width: 1000px)": {
-      fontSize: "10px",
+      fontSize: "14px",
     },
   },
   navigations: {
@@ -156,9 +156,11 @@ const Party = () => {
             />
           </div>
         </a>
-        <a href="#instruments">
+        <a href="#additional">
           <div className={classes.itemicon}>
-            <FaMusic style={{ color: "black", fontSize: "10px" }} />
+            <MdOutlineAddCircleOutline
+              style={{ color: "black", fontSize: "10px" }}
+            />
           </div>
         </a>
       </div>

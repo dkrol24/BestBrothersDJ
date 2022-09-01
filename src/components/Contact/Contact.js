@@ -89,7 +89,6 @@ const Contact = () => {
           </h3>
         </div>
       )}
-      <div className="app__footer-cards"></div>
     </>
   );
 };

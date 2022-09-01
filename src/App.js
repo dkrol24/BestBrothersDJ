@@ -10,6 +10,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Info from "./components/Info/Info";
 export default function App() {
   return (
     <>
@@ -29,9 +30,10 @@ export default function App() {
         <PlaceToVisit />
 
         <Offert />
-
+        <WSPGallery />
         <Testimonial />
         <Contact />
+        <Info />
         <Footer />
       </div>
     </>

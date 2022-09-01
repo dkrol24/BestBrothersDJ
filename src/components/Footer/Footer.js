@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     borderRadius: "16px",
     boxShadow: "0 4px 30px rgba(0, 0, 0, 0.2)",
     backdropFilter: "blur(4px)",
+    "@media screen and (max-width: 500px)": {
+      flexDirection: "column",
+    },
   },
   logo: {
     width: "200px",
@@ -64,8 +67,9 @@ const Footer = () => {
         <ul>
           <li>7 dni w tygodniu</li>
           <li>24 godziny</li>
-          <li>+48 123 123 123</li>
-          <li>email123@gmail.com</li>
+          <li>782 540 062</li>
+          <li>726 332 088</li>
+          <li>dj.bestbrothers@gmail.com</li>
         </ul>
       </div>
       <div>
@@ -77,10 +81,10 @@ const Footer = () => {
             textAlign: "start",
           }}
         >
-          <li>- Fotobudka</li>
-          <li>- Pirotechnika sceniczna</li>
+          <li>- Oprawa muzyczna błogosławieństwa</li>
+          <li>- Oprawa muzyczna ślubu cywilnego</li>
           <li>- Napis LOVE</li>
-          <li>- Auta do ślubu</li>
+          <li>- Ciężki dym</li>
         </ul>
       </div>
     </div>
