@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
 const Eq = () => {
   const classes = useStyles();
   return (
-    <div id="eq" className={classes.container}>
+    <div id="stanowisko" className={classes.container}>
       <div className={classes.OffertContainer}>
         <h1 className={classes.h1}>Stanowisko</h1>
         <p className={classes.p2}>

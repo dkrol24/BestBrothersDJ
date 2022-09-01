@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 const Party = () => {
   const classes = useStyles();
   return (
-    <div id="party" className={classes.container}>
+    <div id="imprezy" className={classes.container}>
       <div className={classes.imagediv}>
         <img className={classes.img} src={Image} alt="" />
       </div>

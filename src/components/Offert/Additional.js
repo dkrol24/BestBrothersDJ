@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 const Additional = () => {
   const classes = useStyles();
   return (
-    <div id="additional" className={classes.container}>
+    <div id="usługi" className={classes.container}>
       <h1 className={classes.h1}>Usługi dodatkowe!</h1>
 
       <div className={classes.itemlist}>

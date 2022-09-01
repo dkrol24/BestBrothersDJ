@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 const Wedding = () => {
   const classes = useStyles();
   return (
-    <div id="wedding" className={classes.container}>
+    <div id="wesela" className={classes.container}>
       <div className={classes.imagediv}>
         <img className={classes.img} src={Image} alt="" />
       </div>

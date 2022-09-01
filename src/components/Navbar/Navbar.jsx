@@ -27,11 +27,13 @@ const Navbar = () => {
         </div>
 
         <ul className="app__navbar-links">
-          {["start", "o nas", "oferta", "opinie", "kontakt"].map((item) => (
-            <li key={`link-${item}`}>
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          ))}
+          {["start", "o nas", "oferta", "galeria", "opinie", "kontakt"].map(
+            (item) => (
+              <li key={`link-${item}`}>
+                <a href={`#${item}`}>{item}</a>
+              </li>
+            )
+          )}
           <a
             href="https://www.facebook.com/dj.bestbrothers/?ref=page_internal"
             target="_blank"
@@ -54,15 +56,20 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
               <ul className="app__navbar-links">
-                {["start", "o nas", "oferta", "opinie", "kontakt"].map(
-                  (item) => (
-                    <li className="app__flex p-text" key={item}>
-                      <a href={`#${item}`} onClick={() => setToggle(false)}>
-                        {item}
-                      </a>
-                    </li>
-                  )
-                )}
+                {[
+                  "start",
+                  "o nas",
+                  "oferta",
+                  "galeria",
+                  "opinie",
+                  "kontakt",
+                ].map((item) => (
+                  <li className="app__flex p-text" key={item}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  </li>
+                ))}
                 <a
                   href="https://www.facebook.com/dj.bestbrothers/?ref=page_internal"
                   target="_blank"

@@ -99,7 +99,7 @@ const Offert = () => {
         </p>
 
         <div className={classes.wrapper}>
-          <a href="#wedding">
+          <a href="#wesela">
             <div className={classes.item}>
               <div className={classes.itemicon}>
                 <AiOutlineHeart style={{ color: "white", fontSize: "30px" }} />
@@ -107,7 +107,7 @@ const Offert = () => {
               <p className={classes.p}>Wesela</p>
             </div>
           </a>
-          <a href="#eq">
+          <a href="#stanowisko">
             <div className={classes.item}>
               <div className={classes.itemicon}>
                 <SiDiscogs style={{ color: "white", fontSize: "30px" }} />
@@ -115,7 +115,7 @@ const Offert = () => {
               <p className={classes.p}>Stanowisko</p>
             </div>
           </a>
-          <a href="#party">
+          <a href="#imprezy">
             <div className={classes.item}>
               <div className={classes.itemicon}>
                 <GiPartyPopper style={{ color: "white", fontSize: "30px" }} />
@@ -123,7 +123,7 @@ const Offert = () => {
               <p className={classes.p}>Inne imprezy</p>
             </div>
           </a>
-          <a href="#additional">
+          <a href="#usługi">
             <div className={classes.item}>
               <div className={classes.itemicon}>
                 <MdOutlineAddCircleOutline

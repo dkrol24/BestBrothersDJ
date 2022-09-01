@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import {
+  AiOutlineCloseCircle,
+  AiFillLeftCircle,
+  AiFillRightCircle,
+} from "react-icons/ai";
 import "./style.css";
 
 const WSPGallery = () => {
@@ -52,15 +56,15 @@ const WSPGallery = () => {
   };
 
   return (
-    <div>
+    <div id="galeria">
       {openModal && (
         <div className="sliderWrap">
           <AiOutlineCloseCircle
             className="btnClose"
             onClick={handleCloseModal}
           />
-          <AiOutlineCloseCircle className="btnPrev" onClick={prevSlide} />
-          <AiOutlineCloseCircle className="btnNext" onClick={nextSlide} />
+          <AiFillLeftCircle className="btnPrev" onClick={prevSlide} />
+          <AiFillRightCircle className="btnNext" onClick={nextSlide} />
           <div className="fullScreenImage">
             <img src={galleryImages[slideNumber].img} alt="" />
           </div>
